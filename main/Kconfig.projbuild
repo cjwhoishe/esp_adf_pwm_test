@@ -1,0 +1,29 @@
+menu "Example Configuration"
+
+config PWM_RIGHT_OUTPUT_GPIO_NUM
+    int "PWM Stream Right Output GPIO NUM"
+    default 18
+    help
+        GPIO number to use for PWM stream driver.
+
+config PWM_LEFT_OUTPUT_GPIO_NUM
+    int "PWM Stream Left Output GPIO NUM"
+    default 23
+    help
+        GPIO number to use for PWM stream driver.
+
+config WIFI_SSID
+    string "WiFi SSID"
+	default "myssid"
+	help
+		SSID (network name) for the example to connect to.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+    default "CRJWireless1"
+	help
+		WiFi password (WPA or WPA2) for the example to use.
+
+		Can be left blank if the network has no security set.
+
+endmenu
